@@ -1,0 +1,31 @@
+.map-container {
+    display: flex;
+  }
+  
+  #map {
+    width: 75%;
+  }
+  
+  .widget-sidebar {
+    width: 25%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .widget-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .widget-item.highlighted {
+    background-color: #d3eaf8;
+    border-left: 5px solid blue;
+  }
+  

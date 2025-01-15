@@ -1,0 +1,12 @@
+<div class="map-container">
+    <div id="map" style="height: 500px;"></div>
+    <div class="widget-sidebar">
+      <input type="text" (input)="searchWidget($event)" placeholder="Search..." class="search-bar" />
+      <div *ngFor="let widget of widgets" [ngClass]="{'highlighted': widget === selectedWidget}" class="widget-item">
+        <h5>{{ widget.name }}</h5>
+        <p>Sıcaklık: {{ widget.temperature }}°C</p>
+        <p>Nem: {{ widget.humidity }}%</p>
+      </div>
+    </div>
+  </div>
+  
